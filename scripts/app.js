@@ -1,9 +1,9 @@
 'use strict';
 
-var goombaPrice = Number(document.getElementById('goomba-price').innerHTML),
-    bobPrice    = Number(document.getElementById('bob-price').innerHTML),
-    cheepsPrice = Number(document.getElementById('cheeps-price').innerHTML),
-    totalPrice = goombaPrice + bobPrice + cheepsPrice,
+var goombaPrice  = document.getElementById('goomba-price').innerHTML,
+    bobPrice     = document.getElementById('bob-price').innerHTML,
+    cheepsPrice  = document.getElementById('cheeps-price').innerHTML,
+    totalPrice   = Number(goombaPrice) + Number(bobPrice) + Number(cheepsPrice),
     priceOutput  = document.getElementById('total-price');
 
 priceOutput.innerHTML += '<h2 class="total">' + totalPrice+ "</h2>";
